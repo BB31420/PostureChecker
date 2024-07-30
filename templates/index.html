@@ -1,1 +1,27 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Posture Monitor</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        img {
+            max-width: 90%;
+            height: auto;
+            border: 2px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 style="text-align: center;">Posture Monitor</h1>
+        <img src="{{ url_for('video_feed') }}" alt="Posture Monitor">
+    </div>
+</body>
+</html>
